@@ -7,8 +7,7 @@
 meteor-platform
 iron:router
 underscore
-twbs:bootstrap
-ian:accounts-ui-bootstrap-3
 accounts-password
 audit-argument-checks
 dburles:collection-helpers
+accounts-ui
