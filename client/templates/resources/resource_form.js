@@ -11,6 +11,7 @@ Template.resourceForm.events({
     var resource = {
       content: $(e.target).find('#content').val(),
       type: $(e.target).find('#type').val(),
+      language: $(e.target).find('#language').val(),
       boardId: this.board._id
     };
 
