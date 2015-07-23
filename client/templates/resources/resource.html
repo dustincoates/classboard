@@ -1,0 +1,11 @@
+<template name="resource">
+  <div>
+    {{#if isURL type}}
+      <a href="{{content}}">{{content}}</a>
+    {{/if}}
+
+    {{#if isCode type}}
+      <pre class="language-markup"><code class="language-markup">{{content}}</code></pre>
+    {{/if}}
+  </div>
+</template>

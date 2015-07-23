@@ -1,3 +1,7 @@
 <template name="boardAdmin">
   {{> resourceForm}}
+
+  {{#each resources}}
+    {{> resource}}
+  {{/each}}
 </template>

@@ -1,0 +1,11 @@
+<template name="resourceForm">
+  <form>
+    <textarea name="content" id="content" rows="10"></textarea>
+    <select name="type" id="type">
+      {{#each resourceTypes}}
+        <option value="{{this}}">{{titleCase this}}</option>
+      {{/each}}
+    </select>
+    <input type="submit" value="Add">
+  </form>
+</template>
