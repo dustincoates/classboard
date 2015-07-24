@@ -1,12 +1,10 @@
 <template name="header">
-  <nav class="navbar">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{pathFor 'boards'}}">Classboard</a>
+  <nav>
+    <div class="site-name">
+      <a href="{{pathFor 'boards'}}">Classboard</a>
     </div>
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        {{> loginButtons}}
-      </ul>
+    <div class="login">
+      {{> loginButtons}}
     </div>
   </nav>
 </template>

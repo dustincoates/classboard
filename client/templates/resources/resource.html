@@ -1,11 +1,17 @@
 <template name="resource">
-  <div>
+  <div class="resource">
     {{#if isURL type}}
-      <a href="{{content}}">{{content}}</a>
-    {{/if}}
-
-    {{#if isCode type}}
-      <pre class="language-{{language}}"><code class="language-{{language}}">{{content}}</code></pre>
-    {{/if}}
+      <div class="url">
+        <a href="{{content}}">{{content}}</a>
+      </div>
+    {{else}}{{#if isCode type}}
+      <div class="code">
+        <pre class="language-{{language}}"><code class="language-{{language}}">{{content}}</code></pre>
+      </div>
+    {{else}}
+      <div class="plain-text">
+        {{content}}
+      </div>
+    {{/if}}{{/if}}
   </div>
 </template>
