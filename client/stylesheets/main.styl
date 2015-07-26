@@ -1,4 +1,8 @@
+normalize-css()
 @import 'jeet'
+
+a
+  color #a6e22e
 
 .container
   center(1280px)
@@ -8,16 +12,19 @@ nav
   margin-bottom 30px
   clearfix()
   .site-name
-    col(1/2)
-    font-size 32px
-
-  .login
-    col(1/2)
+    h1
+      display inline
+      font-size 32px
+      a
+        text-decoration none
     #login-buttons
-      float right
+      font-size 10px
+      margin-left 20px
 
 .resource
   margin-bottom 15px
   .url, .plain-text
     padding 10px
-    border-left 5px solid black
+    border-left 5px solid #34495e
+    a
+      color #34495e
