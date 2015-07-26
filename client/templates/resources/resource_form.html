@@ -3,6 +3,7 @@
     <textarea name="content" id="content" rows="10"></textarea>
     <select name="type" id="type">
       {{#each resourceTypes}}
+        <!-- TODO: Preselect last chosen resource type -->
         <option value="{{this}}">{{titleCase this}}</option>
       {{/each}}
     </select>
