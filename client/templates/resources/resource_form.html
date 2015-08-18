@@ -1,5 +1,5 @@
 <template name="resourceForm">
-  <form>
+  <form class="resource-form">
     <textarea name="content" id="content" rows="10"></textarea>
     <select name="type" id="type">
       {{#each resourceTypes}}
@@ -7,7 +7,7 @@
         <option value="{{this}}">{{titleCase this}}</option>
       {{/each}}
     </select>
-    <input type="text" id="language" name="language" placeholder="language">
+    <input type="text" id="language" name="language" placeholder="language" class="is-hidden">
     <input type="submit" value="Add">
   </form>
 </template>

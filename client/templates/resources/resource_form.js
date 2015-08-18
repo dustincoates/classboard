@@ -28,5 +28,13 @@ Template.resourceForm.events({
         // TODO: This should highlight the inputs
       }
     });
+  },
+
+  'change #type': function(e){
+    if(e.currentTarget.value === 'code'){
+      $('input#language').removeClass('is-hidden');
+    } else{
+      $('input#language').addClass('is-hidden');
+    }
   }
 });
